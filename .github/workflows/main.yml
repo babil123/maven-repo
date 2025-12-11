@@ -1,8 +1,9 @@
-name: Maven Build
+name: Maven Build & Test
 
 on:
   push:
     branches: [ main ]
+  pull_request:
 
 jobs:
   build:
@@ -19,8 +20,9 @@ jobs:
           java-version: '17'
           cache: 'maven'
 
-      - name: Build with Maven & list target folder
+      - name: Build and Test the Project
         run: |
-          mvn -B package
+          mvn -B clean package
           ls -lh target
+
 
