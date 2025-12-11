@@ -13,6 +13,7 @@ Run everything automatically using GitHub Actions CI/CD
 This project prints a message and includes a test to verify the output.
 
 🚀 Project Structure
+
 .
 ├── src
 │   ├── main
@@ -36,7 +37,9 @@ Hello from Maven GitHub Actions Lab!
 
 A JUnit 5 test that checks whether the message returned is correct.
 
+
 🧰 Build Tool: Maven
+
 
 Maven is used to:
 
@@ -50,7 +53,9 @@ Run tests with JUnit
 
 Your pom.xml includes JUnit 5 and the Maven Surefire Plugin for running tests.
 
+
 ⚙️ GitHub Actions Workflow
+
 
 This project includes an automated CI pipeline:
 
@@ -69,6 +74,7 @@ Lists the built files inside the target/ folder
 So every push runs your build automatically.
 
 ▶️ Running the Project Locally
+
 Build the project
 mvn clean package
 
